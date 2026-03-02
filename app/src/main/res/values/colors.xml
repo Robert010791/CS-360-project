@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal">#7CCEEC</color>
+    <array name="card_colors">
+        <item>#F94144</item>
+        <item>#3a86ff</item>
+        <item>#43AA8B</item>
+        <item>#8338ec</item>
+        <item>#ff773d</item>
+        <item>#cbf3f0</item>
+        <item>#606c38</item>
+        <item>#7678ed</item>
+        <item>#ff0054</item>
+        <item>#c200fb</item>
+        <item>#220901</item>
+        <item>#985277</item>
+        <item>#2ebfa5</item>
+
+    </array>
+</resources>

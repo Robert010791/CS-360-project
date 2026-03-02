@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+<!--    This view brings in the toolbar view-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/login_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Username"
+        app:layout_constraintTop_toBottomOf="@+id/login_appbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:hint="password"
+        />
+
+    <EditText
+        android:id="@+id/login_verify_password"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:hint="Verify Password"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/login_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/login_new_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/login_verify_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/login_create_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Create Account"
+        android:layout_marginBottom="25dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/login_sign_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/sign_in"
+        android:layout_marginBottom="25dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/login_error_message"
+        android:textSize="18sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
